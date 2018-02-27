@@ -1,0 +1,5 @@
+name: AutoCityBuilder
+main: io.github.densyakun.bukkit.autocitybuilder.AutoCityBuilder
+version: 1.0
+author: Densyakun
+website: http://densyakun.github.io/
