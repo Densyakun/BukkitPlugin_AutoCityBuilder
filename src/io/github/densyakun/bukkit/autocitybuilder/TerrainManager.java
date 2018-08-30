@@ -1,4 +1,5 @@
 package io.github.densyakun.bukkit.autocitybuilder;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -6,15 +7,16 @@ import java.util.List;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.inventory.ItemStack;
+
 public class TerrainManager {
-	
+
 	public static void breakStand(Block ground) {
 		List<Block> blocks = a(ground, new ArrayList<Block>());
 		for (int a = 0; a < blocks.size(); a++) {
 			blocks.get(a).breakNaturally();
 		}
 	}
-	
+
 	public static boolean drop(Block block) {
 		Collection<ItemStack> drops = block.getDrops();
 		if (drops.size() == 0) {
@@ -31,11 +33,11 @@ public class TerrainManager {
 		}
 		return false;
 	}
-	
+
 	public static boolean aaa(Material m) {
 		return m == Material.DIRT || m == Material.GRASS || m == Material.SAND;
 	}
-	
+
 	public static List<Block> a(Block block, List<Block> blocklist) {
 		int x = block.getX();
 		int y = block.getY();
